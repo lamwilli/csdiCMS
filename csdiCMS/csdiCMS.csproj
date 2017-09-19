@@ -508,6 +508,7 @@
     <Content Include="obj\Debug\csdiCMS.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\csdiCMS.csprojResolveAssemblyReference.cache" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="bin\uskinned-source-theme.lic" />
     <None Include="packages.config" />
     <Content Include="Media\1001\logo.png" />
     <Content Include="Media\1002\open-graph.jpg" />
