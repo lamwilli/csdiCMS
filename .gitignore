@@ -277,3 +277,5 @@ __pycache__/
 
 # ImageProcessor DiskCache 
 **/App_Data/cache/
+# Debug files are a prolblem
+**/obj/Debug/
