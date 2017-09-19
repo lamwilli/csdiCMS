@@ -1,0 +1,8 @@
+﻿@inherits UmbracoViewPage<IUsn_Cmp_Sp_HeaderSection>
+
+@{
+    if (!Model.DisplayHeaderImageSection)
+    {
+        <h1 class="heading main" itemprop="headline">@Umbraco.Field("onPageTitle", altFieldAlias: "pageName")</h1>
+    }  
+}

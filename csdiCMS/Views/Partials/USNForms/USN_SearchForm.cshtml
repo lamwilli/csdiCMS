@@ -1,0 +1,23 @@
+﻿@inherits UmbracoViewPage<USNSourceWeb.App_Code.USNModels.USNBaseViewModel>
+
+@{
+    UsnglobalSettings globalSettings = (UsnglobalSettings)Model.GlobalSettings;
+
+    if (globalSettings.ExamineSearchProviderName != null)
+    {
+        IPublishedContent searchResultsPage = globalSettings.SearchResultsPage;
+
+        if (searchResultsPage != null)
+        { 
+	    <div class="site-search">
+            <form role="search" action="@searchResultsPage.Url" method="get" name="searchForm">
+                <div class="form-group">
+                    <label class="control-label hidden" for="search_field">@umbraco.library.GetDictionaryItem("USN Search Form Placeholder")</label>
+                    <input type="text" class="form-control" id="search_field" name="search_field" placeholder='@umbraco.library.GetDictionaryItem("USN Search Form Placeholder")' value="@Request.QueryString["search_field"]">
+                </div>
+                <button type="submit" class="c1-bg c5-text"><i class="ion-ios-search-strong"></i></button>
+            </form>
+	    </div>
+        }
+    }
+}

@@ -1,0 +1,7 @@
+﻿@inherits UmbracoViewPage<USNSourceWeb.App_Code.USNModels.USNBaseViewModel>
+
+@{	
+    UsnglobalSettings globalSettings = (UsnglobalSettings)Model.GlobalSettings;
+    
+	@Html.Raw(globalSettings.HeaderScripts)
+}
