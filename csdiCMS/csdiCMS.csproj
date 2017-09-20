@@ -3330,6 +3330,8 @@
     <Content Include="Views\USNSitemapPage.cshtml" />
     <Content Include="Views\USNStandardPage.cshtml" />
     <Content Include="Views\USNStandardPageBlogPost.cshtml" />
+    <None Include="Properties\PublishProfiles\csdiCMSStage - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\csdiCMSStage - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
